@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Saksham}{Chitkara}{
+\href{mailto:schitkar@andrew.cmu.edu}{sakshamchitkara12@cmu.edu} | (412) 557-1059 \\
+\urlstyle{same}\url{http://www.contrib.andrew.cmu.edu/~schitkar/}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Carnegie Mellon}
+\subsection{University}
+\descript{Masters of Science in\\ Information Security}
+\location{Aug 2017 - Dec 2018 | Pittsburgh, PA}
+Information Networking Institute \\
+Scholarship Recipient - 2017 \\
+%\location{GPA: N/A}
+\sectionsep
+
+\subsection{SRM University}
+\descript{Bachelors of Technology in Computer Science}
+\location{June 2016 | Chennai, India}
+College of Engineering \\
+\location{GPA: 4.0 / 4.0}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Ubiquitous Computing (08-736)\\
+Computer Systems (18-600)\\
+Information Security (18-730)\\
+Machine Learning (10-601)\\
+\sectionsep
+
+\subsection{Graduate - Audited}
+Green Computing (08-840)\\
+User Focused Sensing Systems (08-735)\\
+Distributed Systems (15-640)\\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\descript{Good:}
+Java \textbullet{} Python  \textbullet{} C\\
+Android \textbullet{} Django Framework\\
+MySQL \textbullet{} Git \textbullet{} Vim \textbullet{} Shell Scripts\\
+\sectionsep
+
+\descript{Familiar:}
+C++ \textbullet{} Matlab \textbullet{} Go \textbullet{} Assembly \\
+HTML/CSS \textbullet{} \LaTeX\ \\ 
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages} 
+{English}{\custombold{ - Academic Proficiency}}\\
+{Hindi}{\custombold{ - Native Speaker}}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\href{https://github.com/saksham12}{Github}://\href{https://github.com/saksham12}{\custombold{saksham12}}\\
+\href{https://www.linkedin.com/in/saksham-chitkara-b319698a/} {LinkedIn:}//  
+\href{https://www.linkedin.com/in/saksham-chitkara-b319698a/}{\custombold{saksham-chitkara\\-b319698a}}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Carnegie Mellon University}
+\descript{| Research Associate}
+\location{Jan 2016 – June 2017 | Pittsburgh, PA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Lead a 5 person CMU team to manage a DARPA funded project (Privacy Enhanced Android) on improving the privacy and security of Android. Worked in collaboration with teams from UC Berkeley, Cornell and UC Irvine.
+% \item The project is being developed in collaboration with UC Berkeley, Cornell University
+% \item Lead a 3 person team to develop Protect My Privacy, an android privacy management app, with 30,000+ downloads.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dell Inc}
+\descript{| Software Engineering Intern }
+\location{Summer 2014 | Chennai, India}
+\begin{tightemize}
+\item Wrote scripts to perform security automation and testing. All code was reviewed, perfected, and pushed to production.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Context-Aware Privacy Management}
+\descript{| Synergy Lab, CMU}
+\location{First Author Publication at Ubicomp 2017}
+\begin{tightemize}
+\item Designed and built a Context-Aware library based privacy management model which lead to 25\% better protection and 30\% reduced user decisions.
+\item \url{http://www.synergylabs.org/yuvraj/docs/Chitkara_Ubicomp2017_ContextAwarePrivacy.pdf}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Privacy Proxy}
+\descript{| CHIMPS Lab + Synergy Lab, CMU}
+\location{Technical Report Published | Aug 2016 – Aug 2017 | Android, Go, MySQL}
+\begin{tightemize} 
+%with \textbf{\href{http://www.cs.cmu.edu/~jasonh/}{Prof Jason Hong}} and \textbf{\href{http://www.synergylabs.org/yuvraj/}{Prof Yuvraj Agarwal}} 
+\item PrivacyProxy is an app for \textbf{unmodified} android devices to detect Personally Identifiable Information (PII) by analyzing the network traffic of the crowd.
+%\item I build an in-situ VPN Service which detects the PII being leaked, even over TLS traffic, in real time by comparing network request signatures of the crowd. 
+\item Designed and implemented a Privacy-sensitive system which intelligently filters the PII before it leaves the device.
+\item \url{https://arxiv.org/pdf/1708.06384.pdf}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Protect My Privacy}
+\descript{| Synergy Lab, CMU}
+\location{Jan 2016 – Aug 2017 | Pittsburgh, PA | Android, C, Python, Django, MySQL |
+\\ 30,000+ downloads}
+\begin{tightemize}
+% \item Designed and built a Context-Aware library based privacy management model which lead to 25\% better protection and 30\% reduced user decisions. 
+\item Designed and implemented a Firewall which blocks Wifi and mobile data on a per app basis by interacting with the Android Kernel.
+\item Model a recommendation system to assist users in making decisions.
+%\item Model a recommendation system to assist users in making privacy aware decisions. (\custombold{Python based})
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Privacy Enhanced Android}
+\descript{| CHIMPS Lab + Synergy Lab, CMU}
+\location{Jan 2017 – Aug 2017 | Pittsburgh, PA}
+\begin{tightemize} 
+\item Constructed an all-encompassing purpose taxonomy for private data access on smartphones and separate out private data access on the basis of the purpose.
+\item Enforced data transmission to apps on the basis of data-usage purposes.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Plagiarism Detector}
+% \descript{| SDC Lab, SRM}
+% \location{June 2014 – Dec 2014 | Chennai, India | Python}
+% \begin{tightemize} 
+% \item Detected Plagiarism in text files by using a n-grams approach after removing stop words.
+% \end{tightemize}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fellowships and Awards} 
+\begin{tabular}{rll}
+2017     & Prabhu and Poonam Pandey Fellowship, Information Networking Institute, \\
+		 & Carnegie Mellon University. Awarded to 2 students in 150. \\
+2016     & Research Fellow, Institute for Software Research, Carnegie Mellon University  \\
+2014     & National Programing Contest - India's Best Brains - Rank 3/3700\\
+2013	 & Best project	award, Computer Science Department, SRM University\\
+2013     & Finalist, Research Day, SRM University (Top 10/600)\\
+\end{tabular}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SOCIETIES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+
+% \begin{tabular}{rll}
+% 2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+% 2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+% 2012   &  National  & Golden Key International Honor Society\\
+% 2012   &  National   & National Society of Collegiate Scholars\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
